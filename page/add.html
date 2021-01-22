@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加模板</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../lib/layui-v2.5.5/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/public.css" media="all">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-form layuimini-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label required">姓名</label>
+        <div class="layui-input-block">
+            <input type="text" name="username" lay-verify="required" lay-reqtext="用户名不能为空" placeholder="请输入用户姓名" value="" class="layui-input">
+            <tip>填写自己管理账号的名称。</tip>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">客户等级</label>
+        <div class="layui-input-block">
+            <input type="radio" name="level" value="A" title="A" checked="">
+            <input type="radio" name="level" value="B" title="B">
+            <input type="radio" name="level" value="C" title="C">
+            <input type="radio" name="level" value="D" title="D">
+            <input type="radio" name="level" value="E" title="E">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">手机</label>
+        <div class="layui-input-block">
+            <input type="number" name="tel" lay-verify="required" lay-reqtext="手机不能为空" placeholder="请输入手机号" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">座机</label>
+        <div class="layui-input-block">
+            <input type="number" name="telOther" lay-verify="required" lay-reqtext="手机不能为空" placeholder="请输入手机号" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">性别</label>
+        <div class="layui-input-block">
+            <input type="radio" name="sex" value="男" title="男" checked="">
+            <input type="radio" name="sex" value="女" title="女">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">婚姻状态</label>
+        <div class="layui-input-block">
+            <input type="radio" name="marriage" value="已婚" title="已婚" checked="">
+            <input type="radio" name="marriage" value="未婚" title="未婚">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label required">贷款意向</label>
+        <div class="layui-input-block">
+            <input type="radio" name="loan" value="有意向" title="有意向" checked="">
+            <input type="radio" name="loan" value="无意向" title="无意向">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">意向金额</label>
+        <div class="layui-input-block">
+            <input type="redio" name="intention" placeholder="请输入意向金额" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">签单数</label>
+        <div class="layui-input-block">
+            <input type="redio" name="signedOrders" placeholder="请输入签单数" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">房产数</label>
+        <div class="layui-input-block">
+            <input type="redio" name="properties" placeholder="请输入房产数" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">车辆数</label>
+        <div class="layui-input-block">
+            <input type="redio" name="car" placeholder="请输入车辆数" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">计划数</label>
+        <div class="layui-input-block">
+            <input type="redio" name="plan" placeholder="请输入计划数" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">身份证号</label>
+        <div class="layui-input-block">
+            <input type="redio" name="idCard" placeholder="请输入身份证号" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">导入时间</label>
+        <div class="layui-input-block">
+            <input type="date" name="createTime" placeholder="请输入导入时间" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">资质</label>
+        <div class="layui-input-block">
+            <input type="redio" name="qualifications" placeholder="请输入资质" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">首电反馈评级</label>
+        <div class="layui-input-block">
+            <input type="redio" name="feedBacks" placeholder="请输入首电反馈评级" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">征信级别</label>
+        <div class="layui-input-block">
+            <input type="redio" name="credit" placeholder="请输入征信级别" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">年龄</label>
+        <div class="layui-input-block">
+            <input type="redio" name="age" placeholder="请输入年龄" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">分配时间</label>
+        <div class="layui-input-block">
+            <input type="date" name="allocateTime" placeholder="请输入分配时间" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">配偶姓名</label>
+        <div class="layui-input-block">
+            <input type="redio" name="spouseName" placeholder="请输入配偶姓名" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">配偶身份证</label>
+        <div class="layui-input-block">
+            <input type="redio" name="spouseId" placeholder="请输入配偶身份证" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">配偶电话</label>
+        <div class="layui-input-block">
+            <input type="redio" name="spouseTel" placeholder="请输入配偶电话" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">客户备注</label>
+        <div class="layui-input-block">
+            <textarea name="customerNotes" class="layui-textarea" placeholder="请输入备注信息"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">前台中心</label>
+        <div class="layui-input-block">
+            <input type="text" name="frontCenter" placeholder="请输入前台中心" value="" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">前台部门</label>
+        <div class="layui-input-block">
+            <textarea name="frontOffice" class="layui-textarea" placeholder="请输入前台部门"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">所属部门</label>
+        <div class="layui-input-block">
+            <textarea name="owner" class="layui-textarea" placeholder="请输入所属部门"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">所属人</label>
+        <div class="layui-input-block">
+            <textarea name="owner" class="layui-textarea" placeholder="请输入所属人"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">数据来源</label>
+        <div class="layui-input-block">
+            <textarea name="dataSource" class="layui-textarea" placeholder="请输入数据来源"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">关注与否</label>
+        <div class="layui-input-block">
+            <textarea name="care" class="layui-textarea" placeholder="请输入关注与否"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">上次联系时间</label>
+        <div class="layui-input-block">
+            <textarea name="last_contact" class="layui-textarea" placeholder="上次联系时间"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">计划时间</label>
+        <div class="layui-input-block">
+            <textarea name="plan_time" class="layui-textarea" placeholder="计划时间"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">是否联系</label>
+        <div class="layui-input-block">
+            <textarea name="contact" class="layui-textarea" placeholder="是否联系"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">未联系天数</label>
+        <div class="layui-input-block">
+            <textarea name="no_contact_day" class="layui-textarea" placeholder="未联系天数"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">是否流转</label>
+        <div class="layui-input-block">
+            <textarea name="circulation" class="layui-textarea" placeholder="是否流转"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">最后修改时间</label>
+        <div class="layui-input-block">
+            <textarea name="final_time" class="layui-textarea" placeholder="最后修改时间"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
+        </div>
+    </div>
+</div>
+<script src="../lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
+<script>
+    layui.use(['form'], function () {
+        var form = layui.form,
+            layer = layui.layer,
+            $ = layui.$;
+
+        //监听提交
+        form.on('submit(saveBtn)', function (data) {
+            console.log(data);
+            $.ajax({
+                url: 'http://localhost:8099/inquiry/create-inquiry',
+                data: data.field,
+                type: 'post',
+                dataType: 'json',
+                // contentType:"application/x-www-form-urlencoded",
+                contentType:"application/json;charset=utf-8",
+                async:false,
+                xhrFields: {
+                    withCredentials: true
+                },
+                success: function (ddd) {
+
+                    // 关闭弹出层
+                    layer.close(index);
+                    var iframeIndex = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(iframeIndex);
+                },
+            })
+        });
+    });
+</script>
+</body>
+</html>
